@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>EVOLUTION CHARTS & TRADING</title>
+  <style>
+    /* Set body styles */
+    body {
+      margin: 0; /* Remove body margin */
+      background-color: #c4abab; /* Set light grey background */
+    }
+
+    /* Styles for the widgets */
+    #coinbrain-widget {
+      position: relative;
+      width: 100%;
+      height: 175px;
+      margin-bottom: 20px;
+    }
+
+    #coinbrain-widget iframe {
+      border-radius: 12px;
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Styles for the DEXSCREENER chart widget */
+    #dexscreener-widget {
+      border: none;
+      width: 75%; /* Adjusted width to take 75% of the available width */
+      height: 100%; /* Set height to 100% to match the aggregator height */
+      margin: auto; /* Center the widget and add a margin */
+    }
+
+    #dexscreener-widget iframe {
+      border: none;
+      width: 100%; /* Set width to 100% to match the dextools chart width */
+      height: 100%; /* Set height to 100% to match the aggregator height */
+    }
+
+    /* Styles for the Poocoin widget */
+    #poocoin-widget {
+      float: right;
+      width: 25%; /* Adjusted width to take 25% of the available width */
+      overflow: auto;
+    }
+
+    #poocoin-widget iframe {
+      border: none;
+      width: 100%;
+      height: 650px;
+    }
+
+    /* Styles for the DEXTools widgets on the second line */
+    #dextools-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 650px;
+    }
+
+    #dextools-chart-widget {
+      border: none;
+      width: 75%; /* Adjusted width to take 75% of the available width */
+      height: 100%;
+    }
+
+    #dextools-chart iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+
+    #dextswap-aggregator-widget {
+      border: none;
+      width: 25%; /* Adjusted width to take 25% of the available width */
+      height: 100%;
+      position: relative;
+      overflow: hidden; /* Set overflow to hidden to hide the Connect Wallet window */
+    }
+
+    /* Adjust size of Connect Wallet button */
+    #dextswap-aggregator-widget iframe {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* Center the Connect Wallet button */
+    }
+
+    /* Responsive adjustments for mobile screens */
+    @media (max-width: 768px) {
+      #coinbrain-widget iframe {
+        height: 150px;
+      }
+
+      #dexscreener-widget iframe {
+        height: 350px;
+        width: 100%;
+      }
+
+      #dextools-container {
+        flex-direction: column;
+        align-items: stretch;
+        height: auto;
+      }
+
+      #dextools-chart-widget,
+      #dextswap-aggregator-widget {
+        flex: none;
+        width: 100%;
+        height: 350px;
+      }
+
+      #poocoin-widget {
+        width: 100%;
+        height: 350px;
+      }
+
+      #poocoin-widget iframe {
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- First line of widgets -->
+  <div id="coinbrain-widget">
+    <iframe src="https://coinbrain.com/coins/bnb-0xaf23921f146c1deb5b436deb3a7fdeaf53f02b3f/ticker?theme=dark&padding=32&type=medium&currency=USD&blocks=price%2CmarketCap%2CtotalSupply"></iframe>
+  </div>
+
+  <h1>THE FLASH EVOLUTION CHARTS & TRADING</h1>
+
+  <!-- Second line of widgets -->
+  <div id="dextools-container">
+    <div id="dexscreener-widget">
+      <iframe src="https://dexscreener.com/bsc/0x2E1473C8dD514E7DF80623d4EeBD857bb9cb41D8?embed=1&theme=dark&trades=0"></iframe>
+    </div>
+    <div id="dextswap-aggregator-widget">
+      <iframe id="dextswap-aggregator"
+              title="DEXTswap Aggregator"
+              width="100%" 
+              height="650"
+              src="https://www.dextools.io/widget-aggregator/en/swap/bnb/0xaf23921f146c1DeB5b436deB3a7FdeAF53f02b3F">
+      </iframe>
+    </div>
+  </div>
+
+  <!-- Third line of widgets -->
+  <div id="poocoin-widget">
+    <iframe src="https://poocoin.app/embed-swap?outputCurrency=0xaf23921f146c1DeB5b436deB3a7FdeAF53f02b3F"></iframe>
+  </div>
+  <div id="dextools-chart-widget">
+    <iframe id="dextools-chart"
+            title="DEXTools Trading Chart" 
+            width="100%" 
+            height="650"
+            src="https://www.dextools.io/widget-chart/en/bnb/pe-light/0x869dcc56da09e4604a1d5a457f58420366b17718?theme=dark&chartType=4&chartResolution=240&drawingToolbars=false">
+    </iframe>
+  </div>
+</body>
+</html>
