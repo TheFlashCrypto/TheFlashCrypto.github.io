@@ -69,7 +69,7 @@ More info soon, stay tunned
 **THE FLASH EVOLUTION project** will show it s **commitment and long term projection** starting a press campaign for everyone to learn about
 
 
-### **- [ ] LAUNCH OUR Decentraliced aplication Daap 🌉 **
+### - [ ] **LAUNCH OUR Decentraliced aplication Daap** 🌉
 **THE FLASH EVOLUTION project** focus on develop his own Defi protocol 
 The transition into **REAL YIELD** rewards for liquidity providers, will be posible to earn USDT providing $FLASH or LPs
 
