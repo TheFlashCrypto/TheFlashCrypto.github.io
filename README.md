@@ -88,4 +88,4 @@ $FLASH EVOLUTION aims to bring excitement to the crypto world while benefiting o
 
 Join us on this journey to the future!
 
-![Comunidad FLA![Comunidad FLASH (youtub)](https://github.com/TheFlashCrypto/TheFlashCrypto/assets/130592325/821fb61c-29d3-4e7e-a6ae-2be615f70a56)
+![Comunidad FLASH (youtub)](https://github.com/TheFlashCrypto/TheFlashCrypto/assets/130592325/821fb61c-29d3-4e7e-a6ae-2be615f70a56)
